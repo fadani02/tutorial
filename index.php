@@ -7,7 +7,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM barangmainan ORDER BY id DESC");
 
 <html>
     <head>
-          <title>Senarai Barangan Kedai Dulu-Dulu</title>
+          <title>Senarai Barangan Mainan</title>
     </head>
     <body>
     <center>
@@ -28,9 +28,9 @@ $result = mysqli_query($mysqli, "SELECT * FROM barangmainan ORDER BY id DESC");
           echo "<tr>";  
           echo "<td>".$no; 
           echo "<td>".$res['nama']."</td>"; 
-          echo "<td>".$res['HARGA']."</td>"; 
-          echo "<td><a href=\"delete.php?id=$res[id]\" onClick=\return confirm('Adakah anda pasti?')
-                    \">hapus</a></td>";
+          echo "<td>".$res['harga']."</td>"; 
+          echo "<td><a href=delete.php?id=$res[id] onClick=return confirm('Adakah anda pasti?')
+                    >hapus</a></td>";
           $no++;
       }
          ?>

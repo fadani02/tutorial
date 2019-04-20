@@ -1,7 +1,7 @@
 <?php
 
 $databaseHost = 'localhost';
-$databaseName = 'KedaiDuluDulu';
+$databaseName = 'barang_mainan';
 $databaseUsername = 'root';
 $databasePassword = '';
 
